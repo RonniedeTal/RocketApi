@@ -1,0 +1,165 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h5{
+  background-color: blueviolet;
+}
+
+button{
+  background-color: rgb(57, 57, 92);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 2s linear infinite;
+  background-color: transparent;
+  border: 0;
+}
+
+*
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.spin1 {
+  animation: spin 8s linear infinite;
+  background-color: transparent;
+  border: 0;
+}
+
+*
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+
+.wrapper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+   transform: translate(-50%, -50%);
+
+}
+
+.pokeball {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50% ;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid;
+  animation: frames .8s  linear 0s infinite;
+}
+
+.pokeball:after{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: red;
+  border-bottom: 4px solid;
+  top: -4px
+}
+
+.pokeball:before{
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height:10px;
+  border: 4px solid;
+  border-radius: 50%;
+  bottom: 18px;
+  right: 18px;
+  z-index: 1;
+}
+
+/* AnimationFrames */
+@keyframes frames{
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/*-----------------colores tipos--------------*/
+/*.bug {
+  background: #aedf78;
+}
+.water {
+  background: #43ccff;
+}
+.grass {
+  background: #00ca91;
+}
+.fire {
+  background: #e95c4d;
+}
+.normal {
+  background: #a5a5a5;
+}
+.poison {
+  background: #611380;
+}
+.electric {
+  background: #f9be00;
+}
+.ground {
+  background: #bfac21;
+}
+.fairy {
+  background: #f87ea7;
+}
+.fighting {
+  background: #e81319;
+}
+.psychic {
+  background: #8a0532;
+}
+.ghost {
+  background: #8e55a4;
+}
+.rock {
+  background: #776a3e;
+}
+.ice {
+  background: #66d1e5;
+}
+.flying {
+  background: #5eb9b2;
+}
+.dark {
+  background: #2d221c;
+}
+.dragon {
+  background: #29036a;
+}
+.steel {
+  background: #7b8e8a;
+}
+.unknown {
+  background: #454545;
+}
+.shadow {
+  background: #4f4f4f;
+}*/
