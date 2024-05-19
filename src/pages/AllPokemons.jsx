@@ -43,6 +43,7 @@ function AllPokemons() {
               <Link to={`/all-pokemon/${i +1}`} >  
               <p>{eachPokemon.name.charAt(0).toUpperCase()+eachPokemon.name.slice(1)}</p>
                 </Link>
+                
             </div> 
         )
     })}

@@ -31,7 +31,7 @@ const getData=()=>{
         return(
             <div key={i}>
             <p>{eachPokemon.pokemon.name}</p> 
-          
+           
            </div>
         )
         
